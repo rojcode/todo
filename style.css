@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#todo-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+}
+
+#todo-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#todo-form {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#todo-form input {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#todo-form button {
+    flex: 1;
+    padding: 8px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#todo-list {
+    padding: 10px;
+}
+
+.todo-item {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+}
+
+.todo-item button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.todo-item button.edit {
+    background-color: #3498db;
+}
+
+
+
+/* Modal Delete */
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+#modal-header {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+#modal-body {
+    padding: 20px;
+}
+
+#modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#delete-btn, #cancel-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#cancel-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+
+/* Modal Edit */
+#edit-modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#edit-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+#edit-modal-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+#edit-modal-body {
+    padding: 20px;
+}
+
+#edit-modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#edit-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#edit-btn, #cancel-edit-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#edit-btn {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+#cancel-edit-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
